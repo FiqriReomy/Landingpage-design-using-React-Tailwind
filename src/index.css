@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn1 {
+  background: linear-gradient(92.23deg, #ff56f6 21.43%, #b936ee 50.63%, #3bace2 100%, #406aff 117.04%);
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn1:hover {
+  background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%);
+}
+
+.gradient,
+.active {
+  background: linear-gradient(92.23deg, #406aff 21.43%, #3bace2 50.63%, #b936ee 100%, #ff56f6 117.04%);
+}
+.gradient2 {
+  background: linear-gradient(103.22deg, #ae67fa -13.86%, #f49867 99.55%), #ffffff;
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+.modalbox {
+  width: clamp (50%, 700px, 90%);
+  height: min(50%, 300px);
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+  }
+  .base-2 {
+    @apply bg-[#06101e] font-primary2 text-white text-sm font-medium;
+  }
+  .btn-primary2 {
+    @apply bg-[#FF4820] py-2 px-5;
+  }
+  .title-21 {
+    @apply text-[50px] leading-[55px];
+  }
+  .title-22 {
+    @apply font-[34px] leading-[45px];
+  }
+  .p22 {
+    @apply text-[#81AFDD] leading-[30px];
+  }
+  .text-gradient2 {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#AE67FA] to-[#F49867] font-bold;
+  }
+  .active2 {
+    @apply text-blue-500;
+  }
+  .backdrop {
+    @apply fixed top-0 bottom-0 right-0 left-0 w-full h-full bg-[#000000e1] flex justify-center items-center;
+  }
+}
