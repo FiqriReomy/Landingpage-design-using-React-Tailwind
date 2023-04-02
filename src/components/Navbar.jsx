@@ -47,12 +47,9 @@ const Navbar = () => {
             ))}
           </div>
           {/* signin and signup area */}
-          <div className="hidden lg:flex gap-5">
-            <motion.button variants={swipe("left", 0.2)} initial={"hidden"} whileInView={"show"} className="cursor-pointer">
-              Sign In
-            </motion.button>
+          <div className="hidden lg:flex justify-start">
             <motion.button variants={swipe("left", 0.2)} initial={"hidden"} whileInView={"show"} className="bg-red-500 rounded py-2 px-8 cursor-pointer">
-              Sign Up
+              Get Started
             </motion.button>
           </div>
           <div className="flex md:hidden">
